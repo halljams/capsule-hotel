@@ -8,5 +8,7 @@ public class Exercise08 {
 
         System.out.println(f);
          */
+        float f = 123.456f;
+        System.out.println(f);
     }
 }

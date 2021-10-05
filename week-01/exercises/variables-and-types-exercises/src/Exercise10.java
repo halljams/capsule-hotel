@@ -4,6 +4,10 @@ public class Exercise10 {
 
         float kmPerHour = 125.25f;
         float hours = 1.75f;
+        float kilometersTraveled = kmPerHour * hours;
+
+        System.out.println(kilometersTraveled);
+
 
         // 1. Given the variables above, calculate the kilometers traveled.
         // 2. Store the value in a new variable.
