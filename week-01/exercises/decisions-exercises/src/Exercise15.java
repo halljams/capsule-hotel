@@ -12,5 +12,26 @@ public class Exercise15 {
         String opposite = null;
 
         // 1. Re-implement Exercise08 using a switch statement.
+        switch (word) {
+            case "high":
+                opposite = "low";
+                System.out.printf("The opposite of %s is %s.",word ,opposite);
+                break;
+            case "big":
+                opposite = "little";
+                System.out.printf("The opposite of %s is %s.",word ,opposite);
+                break;
+            case "small":
+                opposite = "large";
+                System.out.printf("The opposite of %s is %s.",word ,opposite);
+                break;
+            case "jumbo":
+                opposite = "shrimp";
+                System.out.printf("The opposite of %s is %s.",word ,opposite);
+                break;
+            default:
+                opposite = null;
+                System.out.printf("I do not have the opposite for %s", word);
+        }
     }
 }
