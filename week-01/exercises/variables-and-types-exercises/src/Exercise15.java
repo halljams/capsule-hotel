@@ -2,7 +2,7 @@ public class Exercise15 {
 
     public static void main(String[] args) {
 
-        int value = 15;
+        int value = 200;
 
         // 1. Declare a boolean variable inRange.
 

@@ -3,7 +3,15 @@ public class Exercise02 {
     public static void main(String[] args) {
         // 1. Write a loop to print positive even numbers less than 13.
         // Use whatever approach you see fit. (Could count by 2 or use a decision statement inside the loop.)
+     int count = 0;
 
+     while (count < 13) {
+         if (count % 2 == 1) {
+         count++;
+         continue;
+     }
+         System.out.println(count);
+         count++;
         // Expected Output
         // 2
         // 4
@@ -12,4 +20,4 @@ public class Exercise02 {
         // 10
         // 12
     }
-}
+}}
