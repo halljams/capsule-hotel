@@ -2,7 +2,8 @@ public class Exercise02 {
 
     public static void main(String[] args) {
 
-        String[] tenFavoriteFoods = new String[10]; // space for 10 favorite foods
+        String[] tenFavoriteFoods = new String[]{"lemon", "chocolate", "cookies", "crackers", "pizza", "pie", "ice cream", "sandwich", "salad", "grapes"}; // space for 10 favorite foods
+
 
         tenFavoriteFoods[5] = "squid ink";
         System.out.println(tenFavoriteFoods[5]);

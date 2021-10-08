@@ -1,5 +1,18 @@
-public class Exercise12 {
+import java.util.Scanner;
 
+public class Exercise12 {
+    public static String readRequiredString(String prompt) {
+        Scanner console = new Scanner(System.in);
+        String result;
+        do {
+            System.out.print(prompt);
+            result = console.nextLine();
+            if (result.isBlank()) {
+                System.out.println("Error cannot be empty or blank.");
+            }
+        } while (result.isBlank());
+        return result;
+    }
     // 1. Create a method.
     // Name: readRequiredString
     // Inputs: String
@@ -9,7 +22,11 @@ public class Exercise12 {
     //
     // See the readRequiredString implementation in the methods lesson.
     // You can definitely improve it. Make sure you don't allow blank input. Checking the length() is not enough.
-
+    public  static void printNounPhrase() {
+        String adjective = readRequiredString("Enter an adjective: ");
+        String noun = readRequiredString("Enter a noun: ");
+        System.out.println("Your phrase is: " + adjective + " " + noun);
+    }
     // 2. Create a method.
     // Name: printNounPhrase
     // Inputs: none
@@ -20,8 +37,8 @@ public class Exercise12 {
 
     public static void main(String[] args) {
         // 3. Uncomment the code below and confirm it works.
-        // printNounPhrase();
-        // printNounPhrase();
-        // printNounPhrase();
+        printNounPhrase();
+        printNounPhrase();
+        printNounPhrase();
     }
 }

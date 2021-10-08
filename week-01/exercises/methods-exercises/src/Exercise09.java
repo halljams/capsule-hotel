@@ -2,8 +2,20 @@ public class Exercise09 {
 
     public static void main(String[] args) {
         // 2. Call your method in various ways to test it here.
+        printBox(5,5);
+        System.out.println();
+        printBox(3,3);
     }
 
+    public static void printBox(int rows, int cols) {
+            for (int row = 0; row < rows; row++) {
+                for (int col = 0; col < cols; col++) {
+            System.out.print('#');
+            }
+
+        System.out.println();
+    }
+    }
     // 1. Create a method.
     // Name: printBox
     // Inputs: int, int

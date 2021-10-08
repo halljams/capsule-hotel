@@ -8,11 +8,17 @@ public class Exercise11 {
 
         name = readString("What's your name?: ");
         // 2. Uncomment the line below and confirm readInt works.
-        // pillowCount = readInt("How many pillows do you sleep with?: ");
+          pillowCount = readInt("How many pillows do you sleep with?: ");
 
         System.out.printf("%s sleeps with %s pillows.%n", name, pillowCount);
     }
+    public static int readInt(String prompt2) {
+        System.out.println("Please enter a whole number.");
+        String pillow = readString(prompt2);
+        int num = Integer.parseInt(pillow);
 
+        return num;
+    }
     // 1. Create a method.
     // Name: readInt
     // Inputs: String
