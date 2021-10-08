@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe19f53d-aa96-4b92-8e68-1383e794c74e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../exercises/methods-exercises/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercises/methods-exercises/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise05.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise07.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise08.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise09.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/arrays-exercises/src/Exercise09.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise004.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise05.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise06.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise07.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise08.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise09.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise09.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise10.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise11.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise12.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise13.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise14.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercises/methods-exercises/src/Exercise14.java" afterDir="false" />
-    </list>
+    <list default="true" id="fe19f53d-aa96-4b92-8e68-1383e794c74e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
