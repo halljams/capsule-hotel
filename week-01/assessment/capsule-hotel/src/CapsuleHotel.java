@@ -44,7 +44,7 @@ public class CapsuleHotel {
             if (input == 1) {
                 guestcheckIn(console, roomNumbers);
             } else if (input == 2) {
-                guestCheckOut(console, roomNumbers);
+                guestCheckOut(roomNumbers);
             } else if (input == 3) {
                 System.out.println("View Guests");
                 System.out.println("=".repeat(15));
@@ -80,58 +80,61 @@ public class CapsuleHotel {
     */
 
 
-    public static void guestcheckIn(@NotNull Scanner console, String[] prompt) {
+    public static void guestcheckIn( Scanner console, String[] prompt) {
         String name;
         int units;
-
-        do{  System.out.print("Choose a room.");
-            units = parseInt(console.nextLine()) - 1;
-            if ((units < 1) || units >= prompt.length) {
-                System.out.print("That room number is not in range.");
-            }
-            if (prompt[units] == "unoccupied") {
-                System.out.println("That room is taken. Pick another.");
-            }
-        } while (prompt[units] != "unoccupied");
-
         do {
-            System.out.println(prompt);
+            System.out.println("Enter Guest Name: ");
             name = console.nextLine();
             if (name.isBlank()) {
                 System.out.println("Error: Cannot be blank");
             }
         } while (name.isBlank());
+
+        do{
+            System.out.print("Choose a room: ");
+            units = parseInt(console.nextLine()) - 1;
+            if ((units < 1) || units >= prompt.length) {
+                System.out.print("That room number is not in range.");
+            }
+            if (!prompt[units].equals("unoccupied")) {
+                System.out.println("That room is taken. Pick another.");
+            }
+        } while (!prompt[units].equals(units));
+
         prompt[units] = name;
+
         System.out.printf("Guest name: %s%m Room#: %s", name, units);
     }
 
-    public static void guestCheckOut(@NotNull Scanner console, String[] prompt) {
+    public static void guestCheckOut(String[] prompt) {
+        Scanner console = new Scanner(System.in);
         int units;
 
         do {
-            System.out.print("What room would you like to check out of.");
+            System.out.print("What room would you like to check out of: ");
             units = (parseInt(console.nextLine()) - 1);
             if ((units < 1) || units >= prompt.length) {
                 System.out.print("That room number is not in range.");
-                if (prompt.equals("unoccupied")) {
+                if (prompt[units].equals("unoccupied")) {
                     System.out.println("That room is vacant. Please choose your room.");
                 }
             }
-        } while (!prompt.equals("unoccupied"));
+        } while (!prompt[units].equals("unoccupied"));
         prompt[units] = "unoccupied";
+        System.out.printf("You have signed out of room: %s", prompt[units]);
     }
 
 
-    public static void viewGuests(String @NotNull [] guest) {
+    public static void viewGuests(String [] guest) {
         Scanner console = new Scanner(System.in);
 
         int input;
         System.out.println("What room would you like to view?");
         input = console.nextInt();
         for (int i = 0; i < guest.length; i++) {
-            int[] rangeGuest = Arrays.copyOfRange(guest, input - 5, input + 5);
-
-                System.out.printf("Room #%s: %s%n", (rangeGuest[i]),
+        //    int[] rangeGuest = Arrays.copyOfRange(guest, input - 5, input + 5);
+                System.out.printf("Room #%s: %s%n", (i+1),  /*(rangeGuest[i]), */
                         guest[i] == null ? "unoccupied" : guest[i]);
             }
         }
