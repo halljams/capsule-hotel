@@ -17,12 +17,12 @@ public class Exercise09 {
         // 4. Fix any errors by editing the Balloon class.
         // 5. Confirm the output is similar to Sample Output
 
-//        Balloon b = new Balloon("orange");
-//        for (int i = 0; i < 10; i++) {
-//            b.inflate();
-//            System.out.printf("psi:%s, exploded?:%s%n", b.getPsi(), b.isExploded() ? "yes" : "no");
-//        }
-
+        Balloon b = new Balloon("orange");
+      for (int i = 0; i < 10; i++) {
+           b.inflate();
+           System.out.printf("psi:%s, exploded?:%s%n", b.getPsi(), b.isExploded() ? "yes" : "no");
+       }
+            //***** Not showing Infinity
 //        Sample Output
 //        psi:3.168552425925846, exploded?:no
 //        psi:6.449317768787848, exploded?:no
