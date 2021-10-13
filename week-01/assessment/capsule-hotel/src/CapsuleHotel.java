@@ -78,20 +78,24 @@ public class CapsuleHotel {
         } while (guestName.isBlank());
 
         do {
-            System.out.print("Choose a room: ");
-            roomNumber = parseInt(con.nextLine()) - 1;
+                System.out.print("Choose a room: ");
+                roomNumber = parseInt(con.nextLine()) - 1;
+
             if ((roomNumber < 0) || roomNumber > hotel.length) {
                 System.out.print("That room number is not in range.");
             }
             if (!hotel[roomNumber].equals("unoccupied")) {
                 System.out.println("That room is taken. Pick another.");
-            } else
-            hotel[roomNumber] = guestName;
+
+            }if (hotel[roomNumber].equals("unoccupied")) {
+                hotel[roomNumber] = guestName;
+                System.out.println("Guest name: " + guestName + " \nRoom#: " + (roomNumber + 1));
+            }
+
         } while (hotel[roomNumber].equals("unoccupied"));
 
-        hotel[roomNumber] = guestName;
 
-        System.out.println("Guest name: " + guestName + " Room#: " + roomNumber);
+
     }
 
     public static void guestCheckOut(String[] hotel) {
@@ -103,13 +107,17 @@ public class CapsuleHotel {
             roomNumber = (parseInt(console.nextLine()) - 1);
             if ((roomNumber < 0) || roomNumber > hotel.length) {
                 System.out.print("That room number is not in range.");
-                if (hotel[roomNumber].equals("unoccupied")) {
-                    System.out.println("That room is vacant. Please choose your room.");
-                }
-            } hotel[roomNumber] = "unoccupied";
-        } while (!hotel[roomNumber].equals("unoccupied"));
+            }
+            if (hotel[roomNumber].equals("unoccupied")) {
+                System.out.println("That room is vacant. Please choose your room.");
+            }
+            if (!hotel[roomNumber].equals("unoccupied")) {
+                hotel[roomNumber] = "unoccupied";
+                System.out.print("You have signed out of your room.\n");
+            }
+        }   while (!hotel[roomNumber].equals("unoccupied"));
 
-        System.out.print("You have signed out of your room.");
+
     }
 
 
