@@ -1,14 +1,14 @@
 import java.io.PrintStream;
 
 public class Hero {
-    String name;
-    Power[] powers;
+    private String name;
+    private Power[] powers;
 
     public String getName() {
-        return this.name;
+        return name;
     }
     public Power[] getPowers() {
-        return this.powers;
+        return powers;
     }
 
     public Hero(String name, Power[] powers) {
@@ -16,8 +16,14 @@ public class Hero {
         this.powers = powers;
     }
 public String toLine() {
-      return String.format("Hero's name: %s%nHeroes Powers: %s%n", name, powers);
+      String result = "";
+      result += name + "; ";
+      for (Power p : powers) {
+          result += p.getName() + ",";
+      }
 
+   //    return String.format("Hero's name: %s%nHeroes Powers: %s%n", name, powers);
+ return result;
 }
 
 

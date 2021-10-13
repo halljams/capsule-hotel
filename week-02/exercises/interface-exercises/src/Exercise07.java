@@ -43,6 +43,21 @@ public class Exercise07 {
             input = console.nextLine();
         } while (!(input.length() == 1 && input.charAt(0) >= '1' && input.charAt(0) <= '4'));
 
+        switch (input) {
+            case "1":
+
+                break;
+            case "2":
+
+                break;
+            case "3":
+
+                break;
+            case "4":
+
+                break;
+        }
+
         // 1. Add a switch statement to handle options 1 - 4.
         // 2. For each option, create a method that returns a MoneyStorage of the appropriate type:
         // 1 == Wallet, 2 == Mortgage, 3 == Vault, 4 == Bank Account

@@ -1,12 +1,13 @@
 public class Hero {
     private final String name;
-    private final char symbol = '@';
+    private final char symbol;
     private int x;
     private int y;
 
     //Create a hero with a name and an intial position.
-    public Hero(String name, int x, int y) {
+    public Hero(String name,char symbol, int x, int y) {
         this.name = name;
+        this.symbol = symbol;
         this.x = x;
         this.y = y;
     }
@@ -33,6 +34,7 @@ public class Hero {
         x++;
     }
     public void moveUp() {
+
         y--;
     }
     public void moveDown() {

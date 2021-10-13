@@ -15,28 +15,28 @@ public class Exercise10 {
 
             System.out.println("Inflate? [y/n]: ");
             if (console.nextLine().equalsIgnoreCase("y")) {
-                for (int i = 0; i < 10; i++) {
+              //  for (int i = 0; i < 10; i++) {
                     red.inflate();
                     yellow.inflate();
                     green.inflate();
                 }
                 // 2. If the user confirms an inflate, inflate each balloon.
-            } if (red.isExploded()) {
-                System.out.println("Red has exploded!");
-
-            } if(yellow.isExploded()) {
-                System.out.println("Yellow has exploded!");
-
-            } if (green.isExploded()) {
-                System.out.println("Green has exploded!");
-
-            } else{
-                return;
-            }
 
             // 3. When one or more balloons explode, stop the loop.
-        } while (false);
+        } while (!(red.isExploded() || green.isExploded() || yellow.isExploded()));
 
         // 4. Print the color of the winners (balloons that exploded).
+        printBalloon(red);
+        printBalloon(yellow);
+        printBalloon(green);
+
+    }
+    private static void printBalloon(Balloon balloon) {
+        if(balloon.isExploded()) {
+            System.out.printf("the %s balloon exploded%n", balloon.getColor());
+        } else {
+            System.out.printf("the %s balloon is at %s psi%n", balloon.getColor(), balloon.getPsi());
+        }
+
     }
 }

@@ -7,6 +7,10 @@ public class Exercise10 {
         String[] bugs = makeBugArray();
 
         // The bugs array elements are either the value "beetle" or "mosquito".
+        for (int i = 0; i < bugs.length; i++) {
+
+
+        }
         // 1. Count the number of beetles and mosquitoes.
         // 2. Print the result.
         // Results will vary because of randomness.

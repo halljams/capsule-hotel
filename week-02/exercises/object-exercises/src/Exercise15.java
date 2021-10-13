@@ -20,7 +20,9 @@ public class Exercise15 {
         System.out.println(superman.toLine());
         System.out.println(flash.toLine());
 
+
+
+        }
         // 2. Instantiate your three favorite super heroes with appropriate powers.
         // 3. Use the `toLine` method to print each hero's details to the console.
     }
-}
